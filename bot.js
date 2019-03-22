@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['-help','By : - CS | ' Victoor . 🍷#2406','server : ${client.server.tag}!'];
+    var setGame = ['-help','By : - CS | ' Victoor . 🍷#2406'];
     var i = -1;
     var j = 0;
     setInterval(function (){
