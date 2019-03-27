@@ -80,8 +80,7 @@ client.on('message', msg => {
     msg.reply(**:white_check_mark: , هذه قائمة بجميع اوامر البووت.**
 ❯ لعمل تكت,  -new
 ❯ لقفل التكت المفتوح, -close
-❯السيرفر الدعم الفني , https://discord.gg/dsRJU5Q
- ');
+❯السيرفر الدعم الفني , https://discord.gg/dsRJU5Q');
   }
 });
 
