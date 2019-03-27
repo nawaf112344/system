@@ -77,13 +77,21 @@ client.on('ready', () => {
 
 
 
-client.on('message', msg => {
-  if (msg.content === '-help') {
-    msg.reply('
-❯لعمل تكت,-new
-❯لقفل التكت المفتوح, -close
-❯السيرفر الدعم الفني , https://discord.gg/dsRJU5Q');
-  }
+client.on('message' , message => {
+if(message.content === '-help') {
+  var EsTeKnAN = new Discord.RichEmbed()
+  .setColor('RANDOM')
+message.author.send(`
+***__وصف عن البوت__***
+**
+─════════════ {✯اوامر البوت✯} ════════════─
+❯لعمل تكت,-new :tickets: 
+         ❯لقفل التكت المفتوح, -close :lock: 
+                   ❯السيرفر الدعم الفني , https://discord.gg/dsRJU5Q :paperclips:
+─════════════ {✯ By : <@534314527643140101>:tools:  ✯} ════════════─
+**
+`);
+}
 });
 
 
