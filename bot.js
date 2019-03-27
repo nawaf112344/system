@@ -79,11 +79,13 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === '-help') {
-    msg.reply('**:white_check_mark: , هذه قائمة بجميع اوامر البووت.
-❯ لعمل تكت, -new
+    msg.reply('**
+❯ لعمل تكت,-new
 ❯ لقفل التكت المفتوح, -close
-❯السيرفر الدعم الفني , https://discord.gg/dsRJU5Q **');
+❯السيرفر الدعم الفني , https://discord.gg/dsRJU5Q**');
   }
 });
+
+
 
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
