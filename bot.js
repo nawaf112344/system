@@ -80,8 +80,8 @@ client.on('ready', () => {
 client.on('message', msg => {
   if (msg.content === '-help') {
     msg.reply('**
-❯ لعمل تكت,-new
-❯ لقفل التكت المفتوح, -close
+❯لعمل تكت,-new
+❯لقفل التكت المفتوح, -close
 ❯السيرفر الدعم الفني , https://discord.gg/dsRJU5Q**');
   }
 });
