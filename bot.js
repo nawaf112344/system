@@ -67,4 +67,24 @@ client.on("message", (message) => {
  
 });
 
+
+
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag} !`);
+          client.user.setActivity("-help | -invite ",{type: 'WATCHING'});
+  
+  });
+
+client.on('message', msg => {
+  if (msg.content === ' ') {
+    msg.reply(**:white_check_mark: , هذه قائمة بجميع اوامر البووت.**
+❯ لعمل تكت,  -new
+❯ لقفل التكت المفتوح, -close
+❯السيرفر الدعم الفني , https://discord.gg/dsRJU5Q
+ ');
+  }
+});
+
+
+
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
