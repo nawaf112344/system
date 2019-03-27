@@ -77,20 +77,13 @@ client.on('ready', () => {
 
 
 
-client.on("message", message => {
-    if (message.content === (prefix + "help")) {
-     const embed = new Discord.RichEmbed() 
-         .setColor("#580e6b")
-         .setThumbnail(message.author.avatarURL)
-         .setDescription(`**:white_check_mark: , هذه قائمة بجميع اوامر البووت.
+client.on('message', msg => {
+  if (msg.content === '-help') {
+    msg.reply('**:white_check_mark: , هذه قائمة بجميع اوامر البووت.
 ❯ لعمل تكت, -new
 ❯ لقفل التكت المفتوح, -close
-❯السيرفر الدعم الفني , https://discord.gg/dsRJU5Q
-         
-       **  `)
-   message.author.sendEmbed(embed)
-   
-   }
-   });  
+❯السيرفر الدعم الفني , https://discord.gg/dsRJU5Q **');
+  }
+});
 
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
