@@ -80,7 +80,7 @@ client.on("message", message => {
 
 client.on('message', async message => {
   if(message.content.startsWith(prefix + "تقديم")) {
-    await message.channel.send("**ماهوا اسمك :531789358483636233: **").then(e => {
+    await message.channel.send("**ماهوا اسمك? **").then(e => {
     let filter = m => m.author.id === message.author.id
     let lan = '';
     let md = '';
@@ -89,12 +89,12 @@ client.on('message', async message => {
     .then(collected => {
       lan = collected.first().content
       collected.first().delete()
-e.edit(`**كم عمرك :Love: **`)
+e.edit(`**كم عمرك?**`)
 let chaMd = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })
 .then(co => {
   md = co.first().content
         co.first().delete()
-        e.edit(`**مذا سوفا تساعدنا به:566276813467287561: **`)
+        e.edit(`**مذا سوفا تساعدنا به?**`)
 let br = message.channel.awaitMessages(filter, { max: 1, time: 40000, errors: ['time'] })
 .then(col => {
   br = col.first().content
