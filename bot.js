@@ -125,7 +125,7 @@ gg.send({embed : new Discord.RichEmbed()
   let mention = message.mentions.members.first();
   let role = message.content.split(" ").slice(2).join(" ");
   let mySupport = message.guild.roles.find('name',role);
-  let acRoom = client.channels.get('534314527643140101');
+  let acRoom = client.channels.get('570209043801440262');
   if(message.content.startsWith(prefix + "قبول")) {
     if(message.guild.id !== '573735128916951041') return;
     if(!message.guild.member(message.author).hasPermission("MANAGE_ROLES")) return;
