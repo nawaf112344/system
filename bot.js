@@ -108,7 +108,7 @@ if(!gg) return;
 if(gg) {
 gg.send({embed : new Discord.RichEmbed()
 .setDescription(`**الاسم : \n ${lan}\n العمر :\n ${md} \nالمساعدة  :\n ${br}  **`)
-          .setFooter(`Codes.`)
+          .setFooter(`${mention}`)
 .setTimestamp()
 });
 }
